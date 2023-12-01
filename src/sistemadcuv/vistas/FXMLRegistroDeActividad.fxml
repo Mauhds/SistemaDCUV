@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadcuv.controladores.FXMLRegistroDeActividadController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="601.0" style="-fx-background-color: F2F2F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Line endX="100.0" layoutX="302.0" layoutY="91.0" startX="-280.0" stroke="#89a1a1" />
+            <Line endX="100.0" layoutX="509.0" layoutY="203.0" rotate="90.0" startX="-285.0" strokeWidth="0.5" />
+            <Label layoutX="22.0" layoutY="67.0" text="Nombre del proyecto" textFill="#89a1a1" />
+            <TextField layoutX="22.0" layoutY="109.0" prefHeight="25.0" prefWidth="381.0" promptText="Nombre de la actividad" style="-fx-background-color: white; -fx-border-color: #95B9B7; -fx-border-radius: 5;">
+               <effect>
+                  <DropShadow color="#8e9394" height="8.9" radius="1.7850000000000001" spread="0.17" width="0.24" />
+               </effect></TextField>
+            <DatePicker layoutX="22.0" layoutY="149.0" promptText="Fecha de inicio" />
+            <DatePicker layoutX="229.0" layoutY="149.0" promptText="Fecha de finalización" />
+            <ComboBox layoutX="22.0" layoutY="191.0" opacity="0.53" prefHeight="25.0" prefWidth="174.0" promptText="Estatus" />
+            <ComboBox layoutX="229.0" layoutY="191.0" opacity="0.53" prefHeight="25.0" prefWidth="174.0" promptText="Desarrollador asignado" />
+            <TextField layoutX="22.0" layoutY="228.0" prefHeight="117.0" prefWidth="381.0" promptText="Descripción" />
+            <Line endX="100.0" layoutX="476.0" layoutY="47.0" startX="-50.0" stroke="#89a1a1" />
+            <Label layoutX="434.0" layoutY="27.0" text="Archivos de la solicitud" textFill="#89a1a1" />
+            <Button layoutX="341.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #426B1F;" text="Crear" textFill="WHITE" />
+            <Button layoutX="265.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: ACBAB9; -fx-color-fill: white;" text="Cancelar" textFill="WHITE" />
+            <Label layoutX="25.0" layoutY="20.0" text="Registro de Actividad">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="537.0" layoutY="357.0" mnemonicParsing="false" onAction="#clicAgregarActividad" prefHeight="38.0" prefWidth="39.0" style="-fx-background-color: #426B1F; -fx-background-radius: 50;" text="+" textFill="WHITE">
+               <effect>
+                  <DropShadow color="#a5abaa" height="0.0" offsetY="1.0" radius="0.0" width="0.0" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
